@@ -1,0 +1,20 @@
+{
+  "name": "My-Travel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tailwindcss -i ./input.css -o ./css/output.css",
+    "watch": "tailwindcss -i ./input.css -o ./css/output.css --watch",
+    "start": "vite"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.1.8"
+  },
+  "dependencies": {
+    "vite": "^3.1.3"
+  }
+}

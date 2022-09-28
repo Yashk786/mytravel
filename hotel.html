@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/output.css" />
+    <script src="https://kit.fontawesome.com/c32d9c6472.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="text-gray-600 body-font  pt-0">
+        <div class="border-2">
+            <nav class="relative container  h-28 ">
+                <div class="flex  flex-row items-center justify-around  ">
+                    <a href="#">
+                        <img class="w-32  " src="images/goibibo.png" />
+                    </a>
+
+                    <div class="links hidden md:flex space-x-6 font-semibold">
+                        <a href="index.html" class="border-2 rounded-full py-3 px-6 hover:bg-blue-100 ">Flights</a>
+                        <a href="#" class="active border-2 rounded-full py-3 px-6 hover:bg-blue-100 ">Hotels</a>
+                        <a href="cabs.html" class="border-2 rounded-full py-3 px-6 hover:bg-blue-100 ">Cabs</a>
+                        <a href="#popular" class="border-2 rounded-full py-3 px-6 hover:bg-blue-100 ">Popular Places</a>
+                        
+                    </div>
+
+                    <div class="button">
+                        <a href="#"
+                            class="hidden md:block bg-blue-50 border-2 border-solid p-3  px-10 pt-2  rounded-full baseline hover:bg-white">Sign
+                            In</a>
+                    </div>
+
+                    <!----HamburgerIcon----- -->
+                    <button id="menu-btn" class=" block hamburger md:hidden focus:outline-none ">
+                        <span class="hamburger-top"></span>
+                        <span class="hamburger-middle"></span>
+                        <span class="hamburger-bottom"></span>
+                    </button>
+
+                </div>
+
+            </nav>
+            <!-- Mobil menu -->
+            <div class="md:hidden ">
+                <div id="menu"
+                    class="absolute hidden flex flex-col items-center self-end  py-14  space-y-6 font-bold bg-black text-white sm:w-full sm:self-center left-1 right-1 drop-shadow-md">
+                    <a href="index.html">Flights</a>
+                    <a href="#">Hotels</a>
+                    <a href="cabs.html">Cabs</a>
+                    <a href="#popular">Popular Places</a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- form -->
+        <div class="container  flex flex-col justify-center mt-5 mx-auto  ">
+            <!-- search Form -->
+            <div class="border-2 shadow-md p-6">
+                <form action="">
+                    <!-- selection button -->
+                    <div class="hotel-links flex space-x-3 cursor-pointer font-semibold">
+                        <div class="active cursor-pointer   p-2 rounded-2xl hover:bg-blue-100 hover:text-blue-700">
+                            <span>International</span>
+                        </div>
+                        <div
+                            class=" cursor-pointer shadow-transparent  p-2 rounded-2xl hover:bg-blue-100 hover:text-blue-700 ">
+                            <span>India</span>
+                        </div>
+
+                    </div>
+                    <!-- search booking -->
+                    <div class="flex flex-col  py-4 text-slate-600">
+
+                        <div class="flex flex-row items-end justify-center md:justify-between flex-wrap">
+
+                            <!-- From to TO -->
+                            <div class="md:flex">
+                                <div class="flex flex-col">
+                                    <label>Where</label>
+                                    <input type="text" placeholder="Enter Location"
+                                        class=" border-2 py-2 rounded-2xl hover:border-2 pl-7 md:pr-28">
+                                </div>
+                                <!-- arrow -->
+                                <div id="arrow-icon"
+                                    class="flex justify-center mt-5  md:block md:mt-5 md:p-3 transform rotate-90 md:rotate-0">
+                                </div>
+                                <div class="flex flex-col">
+                                    <label>Guests & Rooms</label>
+                                    <input type="text" placeholder="Guests | Rooms"
+                                        class=" border-2  py-2 rounded-2xl pl-5 md:pr-28">
+                                </div>
+                            </div>
+
+
+                            <!-- Departure -->
+                            <div
+                                class=" flex flex-col justify-between mt-6 space-y-3 md:space-y-0 md:flex-row  md:mx-4 md:px-4 md:space-x-6 cursor-pointer">
+                                <div class="flex flex-col">
+                                    <label>Check-in</label>
+                                    <input type="date" class=" border-2 pr-16 pl-3 py-2 rounded-2xl cursor-pointer">
+                                </div>
+                                <div class="flex flex-col">
+                                    <label>Check-out</label>
+                                    <input type="date" class=" border-2 pr-16 pl-3 py-2 rounded-2xl cursor-pointer ">
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- button -->
+                        <div class="flex justify-center items-center ">
+                            <a href="#"
+                                class="font-semibold py-3 px-14 mt-8 cursor-pointer shadow-sm rounded-3xl bg-blue-600 text-white hover:bg-blue-800">Search</a>
+                        </div>
+
+                    </div>
+                </form>
+
+            </div>
+
+            <div class="py-4"></div>
+    </header>
+
+    <!-- offers -->
+    <section class="offers mb-5">
+        <!-- flex container -->
+        <div class="flex flex-col m-1 md:m-9 md:border-2 md:shadow-md md:p-8">
+
+            <h1 class="text-xl md:text-4xl mx-4 font-semibold self-center">Offers For You</h1>
+
+            <!-- first-row -->
+            <div
+                class="flex flex-col md:flex-row justify-around space-y-6 md:space-y-0 md:space-x-9 items-center mt-5 mb-3">
+
+                <!-- first-offer -->
+                <div class="flex border-2  p-4 rounded-xl basis-2/4 hover:shadow-2xl cursor-pointer">
+                    <!-- image-flex -->
+                    <div class="flex  flex-col flex-grow basis-2/5">
+                        <img src="images/offer-1.png" class="md:w-full  h-auto rounded-lg object-cover">
+                        <span class="self-center text-xs md:text-base">T&C's Apply</span>
+                    </div>
+                    <!-- content-offer -->
+                    <div class="flex flex-col  basis-3/5 ml-2 md:ml-4">
+                        <span class="font-semibold text-xs md:text-base text-gray-600"> Domestic Hotels</span>
+                        <h1 class="text-sm font-medium  md:text-xl  md:font-semibold ">Grab Upto 30% OFF! on Domestic Hotels</h1>
+                        <hr class="mt-3">
+                        <h3 class="text-xs  md:text-base md:mt-4 mb-2 md:mb-5">On 15 Days of advance booking.</h3>
+
+                        <div class="self-end justify-self-end">
+                            <a href="#" class="text-xs md:text-lg text-blue-600 font-semibold">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- second-offer -->
+                <div class="flex border-2 p-4 rounded-xl basis-2/4 hover:shadow-2xl cursor-pointer">
+                    <!-- image-flex -->
+                    <div class="flex  flex-col flex-grow basis-2/5">
+                        <img src="images/offer-2.png" class="w-full h-auto rounded-lg object-cover">
+                        <span class="self-center text-xs md:text-base">T&C's Apply</span>
+                    </div>
+                    <!-- content-offer -->
+                    <div class="flex flex-col basis-3/5 ml-2 md:ml-4">
+                        <span class="font-semibold text-xs md:text-base text-gray-600"> Int'l Hotels</span>
+                        <h1 class="text-sm md:text-xl font-medium md:font-semibold ">Grab Upto 20% OFF* on Int'l Hotels
+                        </h1>
+                        <hr class="mt-3">
+                        <h3 class="text-xs md:text-base md:mt-4 mb-2 md:mb-5">Clean Rooms | Hassle Free Check-In</h3>
+
+                        <div class="self-end justify-self-end">
+                            <a href="#" class="text-xs md:text-lg text-blue-600 font-semibold">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- Second row -->
+            <div
+                class="flex flex-col  items-center justify-around space-y-6 md:flex-row md:space-y-0 md:space-x-9  mt-5 mb-3">
+
+                <!-- third-offer -->
+                <div class="flex border-2  p-4 rounded-xl basis-2/4 hover:shadow-2xl cursor-pointer ">
+                    <!-- image-flex -->
+                    <div class="flex  flex-col flex-grow basis-2/5">
+                        <img src="images/offer-3.png" class="w-full h-auto rounded-lg object-cover">
+                        <span class="self-center text-xs md:text-base">T&C's Apply</span>
+                    </div>
+                    <!-- content-offer -->
+                    <div class="flex flex-col basis-3/5 ml-2 md:ml-9">
+                        <span class="font-semibold text-xs md:text-base text-gray-600">  Int'l Hotels</span>
+                        <h1 class="text-sm md:text-xl font-medium md:font-semibold ">Grab Up To Rs. 20,000 OFF on Int'l Hotels!
+                        </h1>
+                        <hr class="mt-3">
+                        <h3 class="text-xs md:text-base md:mt-4 mb-2 md:mb-5">TV , Ac & Wifi | Clean Rooms | Swimming Pool </h3>
+
+                        <div class="self-end justify-self-end">
+                            <a href="#" class="text-xs md:text-lg text-blue-600 font-semibold">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- fourth-offer -->
+                <div class="flex border-2  p-4 rounded-xl basis-2/4 hover:shadow-2xl cursor-pointer">
+                    <!-- image-flex -->
+                    <div class="flex  flex-col flex-grow basis-2/5">
+                        <img src="images/offer-4.png" class="w-full h-auto rounded-lg object-cover">
+                        <span class="self-center text-xs md:text-base">T&C's Apply</span>
+                    </div>
+                    <!-- content-offer -->
+                    <div class="flex flex-col basis-3/5 ml-2 md:ml-9">
+                        <span class="font-semibold text-xs md:text-base text-gray-600">Hotels & Flights</span>
+                        <h1 class="text-sm md:text-xl font-medium md:font-semibold ">Grab up to 15% OFF on Travel Bookings!</h1>
+                        <hr class="mt-3">
+                        <h3 class="text-xs md:text-base md:mt-4 mb-2 md:mb-5">With Axis Bank Credit Cards or Debit Cards.</h3>
+
+                        <div class="self-end justify-self-end">
+                            <a href="#" class="text-xs md:text-lg text-blue-600 font-semibold">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="py-4"></div>
+
+    </section>
+
+    <!-- popular-destinations -->
+    <section class="popular-places md:mx-9" id="popular">
+        <div class="flex flex-col px-3">
+            <h1 class="text-base md:text-2xl font-semibold">Popular Destinations</h1>
+            <h4 class="text-xs md:text-lg font-medium text-gray-900">We have selected some best locations around the
+                world for
+                you.</h4>
+        </div>
+
+        <div class=" flex flex-col mx-16 md:mx-auto space-y-5 md:space-y-0 md:flex-row  md:space-x-4 my-4">
+            <div>
+                <img class="md:w-full h-48 md:h-auto  rounded-md " src="images/dubai.png">
+                <h3 class="text-base  md:text-xl font-semibold">Dubai</h3>
+            </div>
+            <div>
+                <img class="md:w-full h-48 md:h-auto rounded-md" src="images/london.png">
+                <h3 class="text-base  md:text-xl font-semibold">London</h3>
+            </div>
+            <div>
+                <img class="md:w-full h-48 md:h-auto rounded-md" src="images/new-york.png">
+                <h3 class="text-base  md:text-xl font-semibold">New York</h3>
+            </div>
+            <div>
+                <img class="md:w-full h-48 md:h-auto rounded-md" src="images/paris.png">
+                <h3 class="text-base  md:text-xl font-semibold">Paris</h3>
+            </div>
+
+        </div>
+        <div>
+
+        </div>
+        <div class="md:py-6"></div>
+    </section>
+
+
+
+    <section class="cta  ">
+        <!-- gradient -->
+        <div
+            class="bg-gradient-to-r from-slate-900 to-slate-500 rounded-lg  mx-3 my-6 md:h-auto relative md:my-8 md:mx-9  ">
+            <!-- image -->
+            <img src="images/travel.png" class="w-full h-full object-cover absolute mix-blend-overlay rounded-lg">
+            <!-- flex-container -->
+            <div class="flex flex-col justify-center p-2 md:p-24 text-white ">
+                <h1 class="font-semibold text-sm md:text-4xl leading-4">Save instantly with <br>Expedia Rewards</h1>
+                <span class="text-xs mt-2 font-light md:font-normal md:text-lg md:my-4">
+                    You can enjoy access to perks like Member <br> Prices, saving an average of 15% on thousands <br> of
+                    hotels.
+                </span>
+                <!-- button -->
+                <div class="flex justify-start items-center relative">
+                    <a href="#"
+                        class="md:font-semibold font-normal md:py-1 px-2 md:py-3 md:px-14 mt-6 cursor-pointer shadow-sm rounded-3xl bg-blue-600 text-white hover:bg-blue-800">See
+                        Plans</a>
+                </div>
+            </div>
+        </div>
+        <div class="md:py-4"></div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer border-t-4 bg-black text-white  pt-3 pb-24 px-5 md:py-16  md:px-10">
+        <!-- flex container -->
+        <div class="flex justify-between items-center ">
+
+            <!-- image container -->
+            <div class="flex flex-row  space-x-5  md:text-5xl ">
+                <span>
+                    <a href="#">
+                        <i class="fa-brands fa-square-facebook cursor-pointer"></i>
+                    </a>
+                </span>
+                <span>
+                    <a href="#">
+
+                        <i class="fa-brands fa-square-twitter cursor-pointer"></i>
+                    </a>
+                </span>
+            </div>
+
+            <!-- copyright -->
+            <div class="flex flex-col text-xs md:text-base">
+                <h1 class="md:font-semibold">© 2022 MYTRAVEL PVT. LTD.</h1>
+                <p class="self-end ">Country <span class="md:font-semibold"> India USA UAE</span> </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
